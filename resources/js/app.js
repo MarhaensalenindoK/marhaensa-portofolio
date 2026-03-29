@@ -1,7 +1,12 @@
+import './bootstrap';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 // Tunggu hingga seluruh dokumen HTML siap (DOM Ready)
 $(function () {
   // Shorthand for $(document).ready()
-
   // --- Inisialisasi Typed.js ---
   const typedOptions = {
     strings: [
@@ -445,4 +450,53 @@ $(function () {
   });
 
   // ===========================================================
+  // ================== GSAP ANIMATIONS ========================
+  
+  // Fade In Animation
+  gsap.utils.toArray('.gsap-fade-in').forEach(element => {
+    gsap.from(element, {
+      opacity: 0,
+      duration: 1.5,
+      scrollTrigger: {
+        trigger: element,
+        start: "top 85%", 
+      }
+    });
+  });
+
+  // Slide Up Animation
+  gsap.utils.toArray('.gsap-slide-up').forEach(element => {
+    gsap.from(element, {
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: element,
+        start: "top 85%",
+      }
+    });
+  });
+
+  // Detail Page Header Reveal & Parallax
+  if ($('.detail-header').length) {
+    gsap.to('.header-content', {
+      y: 0,
+      opacity: 1,
+      duration: 1.5,
+      ease: "power3.out",
+      delay: 0.2
+    });
+
+    gsap.to('.detail-header', {
+      backgroundPosition: "50% 100%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".detail-header",
+        start: "top top",
+        end: "bottom top",
+        scrub: true
+      }
+    });
+  }
+
 }); // Akhir $(function() { ... });
