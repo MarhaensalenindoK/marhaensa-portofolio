@@ -20,8 +20,6 @@
       </div>
     </section>
 
-    <section id="parallax-section"></section>
-
     <section id="about" class="gsap-slide-up">
       <div class="container">
         <h2>Tentang Saya</h2>
@@ -103,6 +101,8 @@
         </div>
       </div>
     </section>
+
+    <section id="parallax-section"></section>
 
     <section id="portfolio" class="gsap-slide-up">
         <div class="container">
