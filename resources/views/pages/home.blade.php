@@ -102,7 +102,7 @@
       </div>
     </section>
 
-    <section id="parallax-section"></section>
+    <!-- <section id="parallax-section"></section> -->
 
     <section id="portfolio" class="gsap-slide-up">
         <div class="container">
