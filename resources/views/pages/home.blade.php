@@ -217,6 +217,13 @@
         </ul>
         <h4>Teknologi yang Digunakan:</h4>
         <p>PHP, CodeIgniter, JavaScript, HTML, CSS, MySQL, Git, REST API.</p>
+        <h4>Client:</h4>
+        <ul>
+          <li>BRIlife</li>
+          <li>Astralife</li>
+          <li>JMA Syariah</li>
+          <li>dll</li>
+        </ul>
       </div>
     </div>
 

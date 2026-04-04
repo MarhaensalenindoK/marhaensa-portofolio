@@ -46,6 +46,8 @@
                         @if (isset($project['demo_url']))
                             <a href="{{ $project['demo_url'] }}" target="_blank" class="btn-demo"><i class="fas fa-external-link-alt"></i> Kunjungi Live Demo</a>
                         @endif
+
+                        <a href="https://wa.me/6285774394530" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Order yuk</a>
                         
                         @if (isset($project['demo_credentials']))
                             <div class="demo-credentials">

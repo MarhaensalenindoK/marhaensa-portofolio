@@ -36,6 +36,17 @@ class PortfolioController extends Controller
             ],
             'mockup_image' => 'assets/komara-adventure.jpeg',
             'markdown_guide' => 'jeep.md'
+        ],
+        [
+            'slug' => 'wedding-invitation',
+            'title' => 'Wedding Invitation - Ethereal Editorial',
+            'short_desc' => 'Website undangan pernikahan eksklusif dengan filosofi desain Ethereal Editorial, fitur RSVP digital, dan Wedding Gift modern.',
+            'long_desc' => 'Proyek ini mengusung estetika gaya majalah editorial mewah dengan perpaduan tipografi Noto Serif dan Manrope. Fokus utama adalah pada pengalaman pengguna yang premium, asimetris, dan transisi yang halus. Dilengkapi sistem RSVP real-time dan manajemen hadiah pernikahan digital yang aman.',
+            'role' => 'Frontend Developer',
+            'tech_stack' => ['HTML5', 'CSS3', 'JavaScript', 'Vanilla JS'],
+            'demo_url' => 'https://wedding-plate.komara.id',
+            'mockup_image' => 'assets/wedding-guide/hero-desktop.png',
+            'markdown_guide' => 'wedding.md'
         ]
     ];
 
